@@ -30,9 +30,9 @@ spec:
           value: 'true'
         - name: verbose
           value: 'true'
-#        - name: gitInitImage
-#          value: >-
-#            registry.redhat.io/openshift-pipelines/pipelines-git-init-rhel8@sha256:6c3980b3d28c8fb92b17466f5654d5f484ab893f1673ec8f29e49c0d03f8aca9
+        - name: gitInitImage
+          value: >-
+            registry.redhat.io/openshift-pipelines/pipelines-git-init-rhel8@sha256:6c3980b3d28c8fb92b17466f5654d5f484ab893f1673ec8f29e49c0d03f8aca9
         - name: userHome
           value: /tekton/home
       taskRef:
