@@ -26,7 +26,7 @@ spec:
         #    serviceAccountName: github-service-account
 
         pipelineRef:
-          name: quick-start-pipeline-test
+          name: store-start-pipeline-test
         params:
           - name: deployment-name
             value: $(tt.params.git-repo-name)
