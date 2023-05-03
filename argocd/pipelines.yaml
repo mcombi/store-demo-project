@@ -1,0 +1,11 @@
+project: default
+source:
+  repoURL: 'https://github.com/mcombi/store-demo-project.git'
+  path: tekton/kustomize/base
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: store-project-build-env
+syncPolicy:
+  syncOptions:
+    - CreateNamespace=true

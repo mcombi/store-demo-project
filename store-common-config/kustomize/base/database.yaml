@@ -3,9 +3,7 @@ apiVersion: apps.openshift.io/v1
 metadata:
   annotations:
     template.alpha.openshift.io/wait-for-ready: 'true'
-
   name: postgresql
-
   namespace: store-demo-test
   labels:
     template: postgresql-ephemeral-template

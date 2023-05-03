@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="store-demo-project" />
+        <module name="quarkus-orders-project" />
+        <module name="spring-store-project" />
+        <module name="quarkus-store-project" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="store-demo-project" target="1.5" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="quarkus-orders-project" options="-parameters" />
+      <module name="quarkus-store-project" options="-parameters" />
+      <module name="spring-store-project" options="-parameters" />
+    </option>
   </component>
 </project>

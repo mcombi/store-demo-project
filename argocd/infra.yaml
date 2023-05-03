@@ -1,0 +1,11 @@
+project: default
+source:
+  repoURL: 'https://github.com/mcombi/store-demo-project.git'
+  path: store-common-config/kustomize/base
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: store-demo-test
+syncPolicy:
+  syncOptions:
+    - CreateNamespace=true

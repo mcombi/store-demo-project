@@ -4,5 +4,6 @@ namespace: store-demo-test
 resources:
   - database-secret.yaml
   - database.yaml
+  - database-service.yaml
   - kafka.yaml
   - orders-topic.yaml

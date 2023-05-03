@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/quarkus-orders-project" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/quarkus-store-project" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/quarkus-orders-project/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-store-project/pom.xml" />
       </list>
     </option>
   </component>
