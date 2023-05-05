@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="Quarkus" url="file://$PROJECT_DIR$/quarkus-orders-project" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/quarkus-store-project" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/store-quinoa-app" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

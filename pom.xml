@@ -12,5 +12,6 @@
         <module>quarkus-orders-project</module>
         <module>quarkus-store-project</module>
         <module>spring-store-project</module>
+        <module>store-quinoa-app</module>
     </modules>
 </project>
