@@ -25,6 +25,8 @@ useEffect(() => {
     <div className='App'>
       <div className='container'>
         <h1>Quarkus Shop</h1>
+
+        <img className='quarkusimg' src='img.png'/>
       </div>
       <div className='repo-container'>
         <ListLoading isLoading={appState.loading} repos={appState.repos} />

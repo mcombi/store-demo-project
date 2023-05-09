@@ -37,7 +37,7 @@
     ]
   },
 
-  "scripts": {"eject": "react-scripts eject",
+    "scripts": {"eject": "react-scripts eject",
     "prod": "react-scripts build --dest && rsync -a build/* ../resources/META-INF/resources"}
 
 }
