@@ -2,6 +2,10 @@
 Store project for demoing quarkus and or spring features
 
 
+Checklist:
+Docker is running
+You are logged-in on OCP in the right project
+
 Full set up for this project:
 
 1) Install Red Hat Gitops Operator
@@ -20,3 +24,7 @@ To run the spring boot application locally:
 run containers creation in folder local_dev_tool
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
 
+
+To add an extension:
+
+mvn quarkus:add-extension -Dextensions='quarkus-smallrye-openapi'

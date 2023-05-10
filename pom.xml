@@ -10,23 +10,7 @@
     <module>quarkus-orders-project</module>
     <module>quarkus-store-project</module>
     <module>spring-store-project</module>
-    <module>store-quinoa-app</module>
+    <module>order-store-fe</module>
   </modules>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-bom</artifactId>
-        <version>3.0.2.Final</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-openshift</artifactId>
-    </dependency>
-  </dependencies>
+
 </project>
