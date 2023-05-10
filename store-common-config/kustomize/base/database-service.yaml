@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: postgresql
-  namespace: store-demo-test
   labels:
     template: postgresql-ephemeral-template
   annotations:

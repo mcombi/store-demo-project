@@ -4,7 +4,7 @@ metadata:
   annotations:
     template.alpha.openshift.io/wait-for-ready: 'true'
   name: postgresql
-  namespace: store-demo-test
+
   labels:
     template: postgresql-ephemeral-template
     app: store-demo
