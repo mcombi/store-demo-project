@@ -3,8 +3,8 @@ Store project for demoing quarkus and or spring features
 
 
 Checklist:
-Docker is running
-You are logged-in on OCP in the right project
+For local development Docker must be running. Otherwise you need to configure quarkus to work with podman 
+You need to be logged-in on OCP in the right project.
 
 Full set up for this project:
 
@@ -18,7 +18,7 @@ For this demo, the quarkus applications will be deployed from the developer lapt
  a) for a classic build : mvn clean install -Dquarkus.kubernetes.deploy=true
  b) for a native one: mvn clean install -Dquarkus.kubernetes.deploy=true -Dnative
 
-The spring boot application will be deployed via dev tools in ocp
+The spring boot application will be deployed via dev tools in ocp, via Add from Git and go with the default options
 
 To run the spring boot application locally:
 run containers creation in folder local_dev_tool
@@ -26,5 +26,6 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 
 
 To add an extension:
-
+For example in prokect quarkus-store-project
 mvn quarkus:add-extension -Dextensions='quarkus-smallrye-openapi'
+Then go to Order Resource and decomment the commented code live
