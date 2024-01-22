@@ -14,6 +14,8 @@ Full set up for this project:
 2) Install Amq Streams Operator
 3) Create an Argo Cd application to deploy the infra stuff pointing at: https://github.com/mcombi/store-demo-project.git path: store-common-config
 
+Enable monitoring , using the script in store-common-config/monitoring
+
 For this demo, the quarkus applications will be deployed from the developer laptop with command:
  a) for a classic build : mvn clean install -Dquarkus.kubernetes.deploy=true
  b) for a native one: mvn clean install -Dquarkus.kubernetes.deploy=true -Dnative

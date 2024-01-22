@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="quarkus-store-project" />
         <module name="quarkus-orders-project" />
         <module name="spring-store-project" />
         <module name="order-store-fe" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="quarkus-store-project" target="11" />
       <module name="store-quinoa-app" target="17" />
     </bytecodeTargetLevel>
   </component>

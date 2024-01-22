@@ -15,7 +15,7 @@ function App() {
 
 useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = 'http://quarkus-store-project-store-demo-test.apps.cluster-ctlfr.ctlfr.sandbox899.opentlc.com/order';
+    const apiUrl = 'http://quarkus-store-project-store-demo-test.apps.cluster-xr4p5.xr4p5.sandbox603.opentlc.com/order';
     axios.get(apiUrl).then((repos) => {
       const allRepos = repos.data;
       setAppState({ loading: false, repos: allRepos });
