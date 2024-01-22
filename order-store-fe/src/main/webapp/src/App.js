@@ -3,6 +3,7 @@ import './App.css';
 import List from './components/List';
 import withListLoading from './components/withListLoading';
 import axios from 'axios'
+import { Config } from './config';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
 useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = 'http://quarkus-store-project-store-demo-test.apps.cluster-924v8.924v8.sandbox649.opentlc.com/order';
+    const apiUrl = 'http://quarkus-store-project-store-demo-test.apps.cluster-ctlfr.ctlfr.sandbox899.opentlc.com/order';
     axios.get(apiUrl).then((repos) => {
       const allRepos = repos.data;
       setAppState({ loading: false, repos: allRepos });

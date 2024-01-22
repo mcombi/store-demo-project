@@ -37,7 +37,16 @@
 }
 .repo-text {
   font-weight: 600;
+  margin-bottom: 10px;
+  margin-left : 20px;
 }
+
+.repo-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left : 20px;
+}
+
 .repo-description {
   font-weight: 600;
   font-style: bold;

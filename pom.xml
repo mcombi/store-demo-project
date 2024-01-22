@@ -7,9 +7,9 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-    <module>quarkus-orders-project</module>
-    <module>quarkus-store-project</module>
-    <module>spring-store-project</module>
+<!--    <module>quarkus-orders-project</module>-->
+<!--    <module>quarkus-store-project</module>-->
+<!--    <module>spring-store-project</module>-->
     <module>order-store-fe</module>
   </modules>
 
