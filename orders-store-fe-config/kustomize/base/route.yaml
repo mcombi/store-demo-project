@@ -1,0 +1,20 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: order-store-fe
+  namespace: demo-store
+  labels:
+    app.kubernetes.io/name: order-store-fe
+
+    app.openshift.io/runtime: quarkus
+  annotations:
+    openshift.io/host.generated: 'true'
+spec:
+  to:
+    kind: Service
+    name: order-store-fe
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
+
