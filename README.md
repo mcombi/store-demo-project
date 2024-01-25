@@ -17,6 +17,9 @@ Full set up for this project:
 
 
 If we want to deploy the containers from developer laptop:
+Enable monitoring , using the script in store-common-config/monitoring
+
+For this demo, the quarkus applications will be deployed from the developer laptop with command:
  a) for a classic build : mvn clean install -Dquarkus.kubernetes.deploy=true
  b) for a native one: mvn clean install -Dquarkus.kubernetes.deploy=true -Dnative
 
