@@ -1,22 +1,17 @@
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
-  name: order-store-fe
+  name: orders-store-fe
   labels:
-    app: order-store-fe
-    app.kubernetes.io/name: order-store-fe
-    app.openshift.io/runtime: quarkus
+    app: orders-store-fe
+  annotations:
+    cloud.google.com/load-balancer-type: "Internal"
 spec:
   ports:
-    - name: http
-      protocol: TCP
-      port: 80
+    - protocol: TCP
+      port: 8080
       targetPort: 8080
-  internalTrafficPolicy: Cluster
-  type: ClusterIP
-  ipFamilyPolicy: SingleStack
-  sessionAffinity: None
+      name: http
   selector:
-    app.kubernetes.io/name: order-store-fe
-status:
-  loadBalancer: {}
+    app: orders-store-fe
+  type: LoadBalancer
