@@ -4,14 +4,13 @@ metadata:
   name: order-store-fe
   labels:
     app: order-store-fe
-  annotations:
-    openshift.io/host.generated: 'true'
+    app.kubernetes.io/instance: order-store-fe
 spec:
   to:
     kind: Service
     name: order-store-fe
     weight: 100
   port:
-    targetPort: 8080
+    targetPort: http
   wildcardPolicy: None
 
