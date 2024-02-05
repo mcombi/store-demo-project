@@ -19,7 +19,7 @@ spec:
         version: v1
     spec:
       containers:
-        - name: order-store-fe-project
+        - name: order-store-fe
           image: quay.io/mcombi/order-store-fe:1.0
           ports:
             - containerPort: 8080

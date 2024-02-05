@@ -4,7 +4,6 @@ metadata:
   name: order-store-fe
   labels:
     app.kubernetes.io/name: order-store-fe
-
     app.openshift.io/runtime: quarkus
   annotations:
     openshift.io/host.generated: 'true'
