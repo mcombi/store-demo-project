@@ -8,7 +8,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: quarkus-orders
+    name: orders-service
     weight: 100
   port:
     targetPort: http
