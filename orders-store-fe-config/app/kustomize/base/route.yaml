@@ -3,6 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: order-store-fe
   labels:
+    app: order-store-fe
     app.kubernetes.io/name: order-store-fe
     app.openshift.io/runtime: quarkus
   annotations:
