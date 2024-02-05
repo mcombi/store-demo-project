@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: order-store-fe
-          image: quay.io/mcombi/order-store-fe:1.0
+          image: quay.io/mcombi/order-store-fe:1.1
           ports:
             - containerPort: 8080
               protocol: TCP
