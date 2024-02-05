@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: orders-service
   labels:
-    app: store-demo
+    app: quarkus-orders
   annotations:
     cloud.google.com/load-balancer-type: "Internal"
 spec:
@@ -13,5 +13,5 @@ spec:
       targetPort: 8080
       name: http
   selector:
-    app: store-demo
+    app: quarkus-orders
   type: LoadBalancer

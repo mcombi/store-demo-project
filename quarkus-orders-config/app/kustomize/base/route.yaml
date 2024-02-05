@@ -3,12 +3,12 @@ kind: Route
 metadata:
   name: orders-route
   labels:
-    app: store-demo
+    app: quarkus-orders
     app.kubernetes.io/instance: quarkus-orders
 spec:
   to:
     kind: Service
-    name: orders-service
+    name: quarkus-orders
     weight: 100
   port:
     targetPort: http

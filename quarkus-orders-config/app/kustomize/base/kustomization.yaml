@@ -7,4 +7,4 @@ resources:
   - route.yaml
   - service-monitor.yaml
 commonLabels:
-  app: store-demo
+  app: quarkus-orders
