@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: order-store-fe
-  namespace: demo-store
   labels:
     app.kubernetes.io/name: order-store-fe
     app.openshift.io/runtime: quarkus
