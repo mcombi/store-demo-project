@@ -1,1 +1,4 @@
 /lib/
+
+quarkus-store-config/tekton/kustomize/overlays/sealed-secrets/public-cert.pem
+quarkus-store-config/tekton/kustomize/overlays/sealed-secrets/github-secret-ss.yaml
