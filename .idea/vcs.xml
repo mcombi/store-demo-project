@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/camel-store-project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/quarkus-orders-project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/quarkus-store-project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-store-project" vcs="Git" />

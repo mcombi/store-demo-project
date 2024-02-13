@@ -1,6 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-project: default
+project: store-demo-test
 source:
   repoURL: 'https://github.com/mcombi/store-demo-project.git'
   path: store-common-config/kustomize/base

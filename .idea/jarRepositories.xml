@@ -7,6 +7,11 @@
       <option name="url" value="https://maven.repository.redhat.com/ga/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="redhat" />
+      <option name="name" value="redhat" />
+      <option name="url" value="https://maven.repository.redhat.com/ga" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />

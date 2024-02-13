@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/camel-store-project" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/order-store-fe" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/quarkus-orders-project" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/quarkus-store-project" />
@@ -14,6 +15,8 @@
         <option value="$PROJECT_DIR$/quarkus-orders-project/pom.xml" />
         <option value="$PROJECT_DIR$/spring-store-project/pom.xml" />
         <option value="$PROJECT_DIR$/order-store-fe/pom.xml" />
+        <option value="$PROJECT_DIR$/quarkus-store-project/pom.xml" />
+        <option value="$PROJECT_DIR$/camel-store-project/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
