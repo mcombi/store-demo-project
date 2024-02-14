@@ -26,7 +26,6 @@ To Enable monitoring , use the script in store-common-config/monitoring
 
 ### If we want to deploy the containers from developer laptop:
 
-
 For this demo, the quarkus applications will be deployed from the developer laptop with command:
  a) for a classic build : 
 > mvn clean install -Dquarkus.kubernetes.deploy=true
@@ -54,9 +53,18 @@ to a service called postgresql.store-demo-test.svc.cluster.local,
 at the moment the infra stuff must be in a namespace called **store-demo-test**
 
 ### ArgoCd.
-All the application can be deployed using ArgoCd. 
+All the application can be deployed using ArgoCd.
 It is possible to manually add all the applications or using oc cli
 > oc apply -f (files in argocd/apps)
+
+In order to make it work properly, the infra stuff must be deployed before apps, just to avoid crashes and o on. 
+So, the exac order is :
+argocd/common/infra.yaml
+argocd/apps/quarkus-orders-project.yaml
+argocd/apps/quarkus-store-project.yaml
+argocd/apps/orders-store-fe
+
+NB: when we will have pipelines, we will deploy them before the apps.
  
 ### Sealed Secrets
 
