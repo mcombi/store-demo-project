@@ -19,7 +19,6 @@ You need kubeseal (https://github.com/bitnami-labs/sealed-secrets?tab=readme-ov-
     > argoPass=$(oc get secret/openshift-gitops-cluster -n openshift-gitops -o jsonpath='{.data.admin\.password}' | base64 -d)
 2) Install Amq Streams Operator
 3) Install the sealed secret controller ( > oc apply -n kube-system -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.25.0/controller.yaml)
-3) Create an Argo Cd application to deploy the infra stuff pointing at: https://github.com/mcombi/store-demo-project.git path: store-common-config
 4) Install Openshift Pipelines Operator
 
 To Enable monitoring , use the script in store-common-config/monitoring
