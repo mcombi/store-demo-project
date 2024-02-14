@@ -57,6 +57,13 @@ It is possible to manually add all the applications or using oc cli
 > oc apply -f (files in argocd/apps)
 
 In order to make it work properly, the infra stuff must be deployed before apps, just to avoid crashes and o on. 
+
+Create an argoCd project named order-store
+Add https://github.com/mcombi/store-demo-project.git as source repository
+Add in the section destination https://kubernetes.default.svc
+
+
+, the apply
 So, the exac order is :
 argocd/common/infra.yaml
 argocd/apps/quarkus-orders-project.yaml
