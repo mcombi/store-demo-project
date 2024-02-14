@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+project: store-demo
+source:
+  repoURL: 'https://github.com/mcombi/store-demo-project.git'
+  path: quarkus-store-project-config/kustomize/base
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: store-demo-test
+syncPolicy:
+  syncOptions:
+    - CreateNamespace=true

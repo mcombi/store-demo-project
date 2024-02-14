@@ -7,6 +7,8 @@
 For local development Docker must be running. Otherwise you need to configure quarkus to work with podman 
 You need to be logged-in on OCP in the right project.
 You need maven and openjdk 17 installed on your laptop and and IDE (VSCODE or INTELLIJ)
+You need kustomize (https://kubectl.docs.kubernetes.io/installation/kustomize/binaries/)
+You need kubeseal (https://github.com/bitnami-labs/sealed-secrets?tab=readme-ov-file#linux)
 
 ### Full set up for this project in openshift
 
@@ -51,6 +53,11 @@ Then go to Order Resource and decomment the commented code live
 to a service called postgresql.store-demo-test.svc.cluster.local, 
 at the moment the infra stuff must be in a namespace called **store-demo-test**
 
+### ArgoCd.
+All the application can be deployed using ArgoCd. 
+It is possible to manually add all the applications or using oc cli
+> oc apply -f (files in argocd/apps)
+
 To use sealed secrets for sensitive secrets: like github or quay credentials
 Get Cert from controller (mind the directory where you run this command )
 
@@ -60,4 +67,4 @@ Seal the secret (replace username and token in github-secret-ss):
 in the
 kubeseal --format yaml --cert ../../../public-cert.pem < github-secret-ss.yaml > github-secret-sealed.yaml
 
-If u have problems with pvc manully create a pv with the same class as the one in the code
+If u have problems with pvc manually create a pv with the same class as the one in the code
