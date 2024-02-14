@@ -57,6 +57,8 @@ at the moment the infra stuff must be in a namespace called **store-demo-test**
 All the application can be deployed using ArgoCd. 
 It is possible to manually add all the applications or using oc cli
 > oc apply -f (files in argocd/apps)
+ 
+### Sealed Secrets
 
 To use sealed secrets for sensitive secrets: like github or quay credentials
 Get Cert from controller (mind the directory where you run this command )
