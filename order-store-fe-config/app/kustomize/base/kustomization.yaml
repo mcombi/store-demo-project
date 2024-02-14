@@ -4,6 +4,6 @@ resources:
   - store-fe.yaml
   - service.yaml
   - route.yaml
-#  - service-monitor.yaml
+  - cm.yaml
 commonLabels:
   app: order-store-fe
