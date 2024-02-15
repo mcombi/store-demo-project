@@ -11,7 +11,7 @@ spec:
     path: order-store-fe-config/app/kustomize/base
     repoURL: 'https://github.com/mcombi/store-demo-project.git'
     targetRevision: develop
-  project: order-store
+  project: store-demo
   syncPolicy:
     automated:
       prune: false

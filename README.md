@@ -21,7 +21,7 @@ You need kubeseal (https://github.com/bitnami-labs/sealed-secrets?tab=readme-ov-
 3) Install the sealed secret controller ( > oc apply -n kube-system -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.25.0/controller.yaml)
 4) Install Openshift Pipelines Operator
 
-To Enable monitoring , use the script in store-common-config/monitoring
+Optiona, To Enable monitoring , use the script in store-common-config/monitoring
 
 ### If we want to deploy the containers from developer laptop:
 
@@ -58,17 +58,16 @@ It is possible to manually add all the applications or using oc cli
 
 In order to make it work properly, the infra stuff must be deployed before apps, just to avoid crashes and o on. 
 
-Create an argoCd project named order-store
-Add https://github.com/mcombi/store-demo-project.git as source repository
-Add in the section destination https://kubernetes.default.svc
+Create an argoCd project named store demo using 
 
+> oc apply -n openshift-gitops -f argocd/appprj/store-app-project.yaml
 
 , the apply
 So, the exac order is :
-argocd/common/infra.yaml
-argocd/apps/quarkus-orders-project.yaml
-argocd/apps/quarkus-store-project.yaml
-argocd/apps/orders-store-fe
+> oc apply -n openshift-gitops -f argocd/common/infra.yaml
+> oc apply -n openshift-gitops -f argocd/apps/quarkus-orders-project.yaml
+> oc apply -n openshift-gitops -f argocd/apps/quarkus-store-project.yaml
+> oc apply -n openshift-gitops -f argocd/apps/order-store-fe.yaml
 
 NB: when we will have pipelines, we will deploy them before the apps.
  

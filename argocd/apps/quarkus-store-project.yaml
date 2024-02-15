@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: qaurkus-store-project
+  name: quarkus-store-project
 spec:
   destination:
     name: ''
@@ -11,7 +11,7 @@ spec:
     path: quarkus-store-project-config/app/kustomize/base
     repoURL: 'https://github.com/mcombi/store-demo-project.git'
     targetRevision: develop
-  project: order-store
+  project: store-demo
   syncPolicy:
     automated:
       prune: false
