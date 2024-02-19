@@ -25,9 +25,14 @@ spec:
             - containerPort: 8080
               protocol: TCP
               name: tpc-port
+
           env:
-          - name: REACT_APP_ORDER_BACKEND
-            value: "aaaaaaaaaaaaaaaaaa"
+            - name: REACT_APP_ORDER_BACKEND
+              valueFrom:
+                configMapKeyRef:
+                  name: store-fe-configmap
+                  key: STORE_ROUTE_URL
+
 #          readinessProbe:
 #            httpGet:
 #              path: /q/health
