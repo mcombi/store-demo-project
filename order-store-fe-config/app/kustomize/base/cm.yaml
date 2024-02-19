@@ -3,5 +3,4 @@ kind: ConfigMap
 metadata:
   name: store-fe-configmap
 data:
-  .env: |
      STORE_ROUTE_URL: string ='http://store-route-store-demo-test.apps.cluster-xsn7c.dynamic.redhatworkshops.io/order';   
