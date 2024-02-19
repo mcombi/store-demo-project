@@ -20,11 +20,14 @@ spec:
     spec:
       containers:
         - name: order-store-fe
-          image: quay.io/mcombi/order-store-fe:1.1
+          image: quay.io/mcombi/order-store-fe:1.2
           ports:
             - containerPort: 8080
               protocol: TCP
               name: tpc-port
+          env:
+          - name: REACT_APP_ORDER_BACKEND
+            value: "123456"
 #          readinessProbe:
 #            httpGet:
 #              path: /q/health
