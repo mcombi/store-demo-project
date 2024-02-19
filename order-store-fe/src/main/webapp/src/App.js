@@ -3,7 +3,7 @@ import './App.css';
 import List from './components/List';
 import withListLoading from './components/withListLoading';
 import axios from 'axios'
-import { Config } from './config';
+
 
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
 
 useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = 'http://store-route-store-demo-test.apps.cluster-xsn7c.dynamic.redhatworkshops.io/order';
+    const apiUrl = process.env.REACT_APP_ORDER_BACKEND;
+
     axios.get(apiUrl).then((repos) => {
       const allRepos = repos.data;
       setAppState({ loading: false, repos: allRepos });
@@ -23,8 +24,10 @@ useEffect(() => {
   }, [setAppState]);
 
   return (
+
     <div className='App'>
       <div className='container'>
+
         <h1>Quarkus Shop</h1>
 
         <img className='quarkusimg' src='img.png'/>
