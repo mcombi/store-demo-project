@@ -62,3 +62,8 @@ This is a tiny webpack app to get started with Quinoa. It generates a quinoa.htm
 
 [Related guide section...](https://quarkiverse.github.io/quarkiverse-docs/quarkus-quinoa/dev/index.html)
 
+
+To build an image of the application:
+podman build -t  quay.io/mcombi/order-store-fe:1.0 -f src/main/docker/Dockerfile.jvm .
+podman push quay.io/mcombi/order-store-fe:1.2
+
