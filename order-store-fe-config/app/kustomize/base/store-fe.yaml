@@ -27,7 +27,7 @@ spec:
               name: tpc-port
           env:
           - name: REACT_APP_ORDER_BACKEND
-            value: "123456"
+            value: "http://store-route-store-demo-test.apps.agamennone2.lab.upshift.rdu2.redhat.com/order"
 #          readinessProbe:
 #            httpGet:
 #              path: /q/health
