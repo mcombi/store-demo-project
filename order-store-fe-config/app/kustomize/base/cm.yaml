@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: my-applicaton-configmap
+  name: store-fe-configmap
 data:
-  appConfig.js: |
+  .env: |
      STORE_ROUTE_URL: string ='http://store-route-store-demo-test.apps.cluster-xsn7c.dynamic.redhatworkshops.io/order';   
