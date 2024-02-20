@@ -9,7 +9,7 @@ source:
   targetRevision: develop
 destination:
   server: 'https://kubernetes.default.svc'
-  namespace: demo-project-build-env
+  namespace: store-project-build-env
 syncPolicy:
   syncOptions:
     - CreateNamespace=true
