@@ -1,6 +1,8 @@
 #don't use this. It is not working
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+project: store-demo
 
-project: default
 source:
   repoURL: 'https://github.com/mcombi/store-demo-project.git'
   path: quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets
