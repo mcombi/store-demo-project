@@ -1,16 +1,16 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: el-quick-start
+  name: el-store-project
   annotations:
     argocd.argoproj.io/sync-wave: "4"
   labels:
-    app: quick-start
-    app.kubernetes.io/instance: quick-start
+    app: store-project
+    app.kubernetes.io/instance: store-project
 spec:
   to:
     kind: Service
-    name: el-quick-start
+    name: el-store-project
     weight: 100
   port:
     targetPort: http-listener

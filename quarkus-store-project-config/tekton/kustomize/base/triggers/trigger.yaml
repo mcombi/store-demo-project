@@ -1,7 +1,7 @@
 apiVersion: triggers.tekton.dev/v1beta1
 kind: Trigger
 metadata:
-  name: quick-start-trigger
+  name: store-project-trigger
   annotations:
     argocd.argoproj.io/sync-wave: "4"
 spec:
