@@ -1,15 +1,17 @@
 #don't use this. It is not working
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-project: store-demo
-
-source:
-  repoURL: 'https://github.com/mcombi/store-demo-project.git'
-  path: quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets
-  targetRevision: develop
-destination:
-  server: 'https://kubernetes.default.svc'
-  namespace: store-project-build-env
-syncPolicy:
-  syncOptions:
-    - CreateNamespace=true
+metadata:
+  name: pipelines
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/mcombi/store-demo-project.git'
+    path: quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets
+    targetRevision: develop
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: store-project-build-env
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
