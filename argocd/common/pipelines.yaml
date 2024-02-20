@@ -3,11 +3,11 @@
 project: default
 source:
   repoURL: 'https://github.com/mcombi/store-demo-project.git'
-  path: tekton/kustomize/base
-  targetRevision: HEAD
+  path: quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets
+  targetRevision: develop
 destination:
   server: 'https://kubernetes.default.svc'
-  namespace: store-project-build-env
+  namespace: demo-project-build-env
 syncPolicy:
   syncOptions:
     - CreateNamespace=true
