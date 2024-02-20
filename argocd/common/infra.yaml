@@ -4,10 +4,12 @@ project: store-demo-test
 source:
   repoURL: 'https://github.com/mcombi/store-demo-project.git'
   path: store-common-config/kustomize/base
-  targetRevision: HEAD
+  targetRevision: develop
 destination:
   server: 'https://kubernetes.default.svc'
   namespace: store-demo-test
 syncPolicy:
+  automated:
+      selfHeal: true
   syncOptions:
     - CreateNamespace=true
