@@ -17,6 +17,6 @@ spec:
         - name: "eventTypes"
           value: ["push"]
   bindings:
-    - ref: quick-start
+    - ref: store-project
   template:
-    ref: quick-start
+    ref: store-project
