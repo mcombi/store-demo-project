@@ -4,7 +4,7 @@ kind: Application
 metadata:
   name: pipelines
 spec:
-  project: store-demo-test
+  project: store-demo
   source:
     repoURL: 'https://github.com/mcombi/store-demo-project.git'
     path: quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets

@@ -15,10 +15,12 @@ spec:
   destinations:
     - namespace: store-demo-test
       server: https://kubernetes.default.svc
+    - namespace: store-project-build-env
+      server: https://kubernetes.default.svc
   # Deny all cluster-scoped resources from being created, except for Namespace
   clusterResourceWhitelist:
-    - group: ''
-      kind: Namespace
+    - group: '*'
+      kind: '*'
   # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
   namespaceResourceBlacklist:
     - group: ''

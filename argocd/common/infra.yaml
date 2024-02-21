@@ -2,8 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: infra
-project: store-demo-test
+
 spec:
+  project: store-demo
   source:
     repoURL: 'https://github.com/mcombi/store-demo-project.git'
     path: store-common-config/kustomize/base

@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: store-demo-test
+    namespace: store-demo
     server: 'https://kubernetes.default.svc'
   source:
     path: quarkus-store-project-config/app/kustomize/base
