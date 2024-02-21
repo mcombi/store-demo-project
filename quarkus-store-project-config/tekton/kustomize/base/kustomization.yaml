@@ -7,7 +7,7 @@ resources:
   - storage-class.yaml
   - pvc.yaml
 #  - promote-pipeline.yaml
-  - github-secret.yaml
+#  - github-secret.yaml
   - promote-task.yaml
   - quay-secret.yaml
   - github-service-account.yaml
