@@ -26,6 +26,7 @@ useEffect(() => {
   return (
 
     <div className='App'>
+      <pre>{process.env.REACT_APP_ORDER_BACKEND}</pre>
       <div className='container'>
 
         <h1>Quarkus Shop</h1>
