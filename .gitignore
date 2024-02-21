@@ -3,3 +3,5 @@
 /quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets/public-cert.pem
 /quarkus-store-project-config/tekton/kustomize/overlays/sealed-secrets/github-secret-ss.yaml
 
+/.idea/
+
