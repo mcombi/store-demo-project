@@ -62,7 +62,8 @@ So, the exact order is :
 > oc apply -n openshift-gitops -f argocd/common/infra.yaml
 > oc apply -n openshift-gitops -f argocd/apps/quarkus-orders-project.yaml
 > oc apply -n openshift-gitops -f argocd/apps/quarkus-store-project.yaml
-> oc apply -n openshift-gitops -f argocd/apps/order-store-fe.yaml
+> [oc apply -n openshift-gitops -f argocd/apps/order-store-fe.yaml]()
+> oc apply -n openshift-gitops -f argocd/common/pipelines.yaml
 
 NB: when we will have pipelines, we will deploy them before the apps.
  
