@@ -8,7 +8,7 @@ spec:
     namespace: store-demo
     server: 'https://kubernetes.default.svc'
   source:
-    path: quarkus-store-project-config/app/kustomize/base
+    path: quarkus-store-project-config/app/kustomize/overlays/test
     repoURL: 'https://github.com/mcombi/store-demo-project.git'
     targetRevision: develop
   project: store-demo
