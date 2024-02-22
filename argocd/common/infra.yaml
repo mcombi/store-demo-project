@@ -14,6 +14,6 @@ spec:
     namespace: store-demo-test
   syncPolicy:
     automated:
-        selfHeal: true
+        selfHeal: false
     syncOptions:
       - CreateNamespace=true
