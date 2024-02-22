@@ -26,7 +26,7 @@ spec:
           namespace: openshift
           name: 'postgresql:latest'
         lastTriggeredImage: >-
-          image-registry.openshift-image-registry.svc:5000/openshift/postgresql@sha256:1774ffbf7472dfb8ae8d6edf42e04e7e912bd606e4b877e9485c59054f0c1ea5
+          image-registry.openshift-image-registry.svc:5000/openshift/postgresql@sha256:19aec763de6493191d0ef4da0022bf02d2b687182632df9957366025f2ccc15a
     - type: ConfigChange
   replicas: 1
   revisionHistoryLimit: 10
