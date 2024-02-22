@@ -100,7 +100,7 @@ spec:
         - name: NEW_DIGEST
           value: $(tasks.git-clone.results.commit)
         - name: KUSTOMIZATION_PATH
-          value: quarkus-store-config/app/kustomize/overlays/test
+          value: quarkus-store-project-config/app/kustomize/overlays/test
       runAfter:
         - s2i-java-11-custom
       taskRef:
