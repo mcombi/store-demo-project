@@ -43,6 +43,7 @@ spec:
         - resources:
             limits:
               memory: 512Mi
+          name: postgresql
 #          readinessProbe:
 #            exec:
 #              command:
@@ -53,7 +54,7 @@ spec:
 #            successThreshold: 1
 #            failureThreshold: 3
 #          terminationMessagePath: /dev/termination-log
-#          name: postgresql
+#
 #          livenessProbe:
 #            exec:
 #              command:
