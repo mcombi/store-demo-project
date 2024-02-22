@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+:root {
+  --basic-color: #960019;
+}
+.App {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', serif;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  color: red;
+}
+.container h1 {
+  font-size: 60px;
+  text-align: center;
+  color: var(--basic-color);
+}
+.repo-container {
+  width: 50%;
+  height: 700px;
+  margin: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: #f0f9ff;
+}
+@media screen and (max-width: 600px) {
+  .repo-container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+.repo-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left : 20px;
+}
+
+.repo-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left : 20px;
+}
+
+.repo-description {
+  font-weight: 600;
+  font-style: bold;
+  font-size: 20px;
+  color: var(--basic-color);
+}
+.list-head {
+  text-align: center;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.footer {
+  font-size: 15px;
+  font-weight: 600;
+}
+.list {
+  list-style: circle;
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+.quarkusimg {
+    width: 300px;
+    height: 130px;
+    margin-top: 1.75em;
+    margin-left: 1.75em;
+}
+
+p {
+      margin-left: 2em;
+      margin-top: 1.5em;
+  }
