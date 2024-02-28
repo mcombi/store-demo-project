@@ -7,7 +7,3 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - ../../base
-images:
-- name: quay.io/mcombi/quarkus-store-project
-  newName: quay.io/mcombi/quarkus-store-project
-  newTag: ce2b9a8dcba466613d665e9df029062530c698f7
