@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: quarkus-orders-project
-          image: quay.io/mcombi/quarkus-orders-project:1.1
+          image: quay.io/mcombi/quarkus-orders-project:1.0
           ports:
             - containerPort: 8080
               protocol: TCP
