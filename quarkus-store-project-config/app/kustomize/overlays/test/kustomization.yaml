@@ -10,4 +10,4 @@ resources:
 images:
 - name: quay.io/mcombi/quarkus-store-project
   newName: quay.io/mcombi/quarkus-store-project
-  newTag: dc2585b4402cd246743fe4ecf8dd1e87c4e9fa4a
+  newTag: 456e2e2f1962cb448a0b831e06632e0543560884
